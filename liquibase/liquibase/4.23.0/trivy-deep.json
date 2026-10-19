@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019e1f91-284a-7288-9258-d4cc03a4af7e",
-  "CreatedAt": "2026-05-13T04:21:07.274166937Z",
+  "ReportID": "01a15515-7371-78d3-ae51-6a8bdb89d666",
+  "CreatedAt": "2026-10-19T16:53:51.601580115Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -309,7 +309,7 @@
             "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
           ],
           "PublishedDate": "2022-11-23T21:15:11.36Z",
-          "LastModifiedDate": "2024-11-21T07:29:52.05Z"
+          "LastModifiedDate": "2026-06-17T05:10:53.73Z"
         },
         {
           "VulnerabilityID": "CVE-2025-24789",
@@ -355,7 +355,7 @@
             "https://nvd.nist.gov/vuln/detail/CVE-2025-24789"
           ],
           "PublishedDate": "2025-01-29T18:15:47.03Z",
-          "LastModifiedDate": "2025-08-20T18:18:54.14Z"
+          "LastModifiedDate": "2026-06-17T08:59:36.757Z"
         },
         {
           "VulnerabilityID": "CVE-2024-1597",
@@ -392,12 +392,13 @@
             "nvd": 4,
             "oracle-oval": 3,
             "redhat": 3,
-            "rocky": 3
+            "rocky": 3,
+            "ubuntu": 2
           },
           "CVSS": {
             "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "V3Score": 9.8
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 10
             },
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
@@ -418,12 +419,19 @@
             "https://access.redhat.com/security/cve/CVE-2024-1597",
             "https://bugzilla.redhat.com/2266523",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266523",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-1597",
             "https://errata.almalinux.org/9/ALSA-2024-1436.html",
-            "https://errata.rockylinux.org/RLSA-2024:1435",
+            "https://errata.rockylinux.org/RLSA-2024:1436",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee",
+            "https://github.com/pgjdbc/pgjdbc/commit/06abfb78a627277a580d4df825f210e96a4e14ee%20%28REL42.7.2%29",
+            "https://github.com/pgjdbc/pgjdbc/commit/1b1d6b53eca90409af0069d5327d4fdf8d40a255%20%28REL42.5.5%29",
+            "https://github.com/pgjdbc/pgjdbc/commit/475e3e2af3033c666fc1c0015159b35455118ae5%20%28REL42.5.5%29",
             "https://github.com/pgjdbc/pgjdbc/commit/93b0fcb2711d9c1e3a2a03134369738a02a58b40",
+            "https://github.com/pgjdbc/pgjdbc/commit/93b0fcb2711d9c1e3a2a03134369738a02a58b40%20%28REL42.7.2%29",
+            "https://github.com/pgjdbc/pgjdbc/commit/990d63f6be401ab40de5eb303a75924c9e71903c%20%28REL42.2.28%29",
+            "https://github.com/pgjdbc/pgjdbc/commit/b9b3777671c8a5cc580e1985f61337d39d47c730%20%28REL42.2.28%29",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-24rp-q3w6-vc56",
             "https://linux.oracle.com/cve/CVE-2024-1597.html",
             "https://linux.oracle.com/errata/ELSA-2024-1436.html",
@@ -438,7 +446,7 @@
             "https://www.sonarsource.com/blog/double-dash-double-trouble-a-subtle-sql-injection-flaw/"
           ],
           "PublishedDate": "2024-02-19T13:15:07.74Z",
-          "LastModifiedDate": "2025-11-03T22:16:40.287Z"
+          "LastModifiedDate": "2026-06-17T07:04:36.577Z"
         },
         {
           "VulnerabilityID": "CVE-2026-42198",
@@ -469,9 +477,12 @@
             "CWE-770"
           ],
           "VendorSeverity": {
+            "alma": 3,
             "bitnami": 3,
             "ghsa": 3,
-            "redhat": 3
+            "oracle-oval": 3,
+            "redhat": 3,
+            "rocky": 3
           },
           "CVSS": {
             "bitnami": {
@@ -488,15 +499,38 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:19098",
+            "https://access.redhat.com/errata/RHSA-2026:22304",
+            "https://access.redhat.com/errata/RHSA-2026:24348",
+            "https://access.redhat.com/errata/RHSA-2026:25030",
+            "https://access.redhat.com/errata/RHSA-2026:52928",
+            "https://access.redhat.com/errata/RHSA-2026:52929",
+            "https://access.redhat.com/errata/RHSA-2026:52930",
+            "https://access.redhat.com/errata/RHSA-2026:52978",
+            "https://access.redhat.com/errata/RHSA-2026:54532",
+            "https://access.redhat.com/errata/RHSA-2026:59277",
+            "https://access.redhat.com/errata/RHSA-2026:59278",
+            "https://access.redhat.com/errata/RHSA-2026:66488",
+            "https://access.redhat.com/errata/RHSA-2026:66545",
             "https://access.redhat.com/security/cve/CVE-2026-42198",
+            "https://advisory.echohq.com/cve/CVE-2026-42198",
+            "https://bugzilla.redhat.com/2463857",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
+            "https://errata.almalinux.org/9/ALSA-2026-22304.html",
+            "https://errata.rockylinux.org/RLSA-2026:22304",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
             "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-98qh-xjc8-98pq",
+            "https://linux.oracle.com/cve/CVE-2026-42198.html",
+            "https://linux.oracle.com/errata/ELSA-2026-25030.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-42198",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-42198.json",
             "https://www.cve.org/CVERecord?id=CVE-2026-42198"
           ],
           "PublishedDate": "2026-04-29T16:16:25.427Z",
-          "LastModifiedDate": "2026-05-01T12:51:20.853Z"
+          "LastModifiedDate": "2026-09-11T13:17:58.347Z"
         }
       ]
     }

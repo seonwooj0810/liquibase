@@ -3,8 +3,8 @@
   "Trivy": {
     "Version": "0.69.3"
   },
-  "ReportID": "019efe6d-d642-70d6-ba25-71accb136572",
-  "CreatedAt": "2026-06-25T10:57:51.682055895Z",
+  "ReportID": "01a15517-2b20-7ebe-8233-5addaf9ae2d6",
+  "CreatedAt": "2026-10-19T16:55:44.160967548Z",
   "ArtifactName": "/tmp/extracted-deps",
   "ArtifactType": "filesystem",
   "Results": [
@@ -378,6 +378,7 @@
             }
           },
           "References": [
+            "https://advisory.echohq.com/cve/CVE-2025-59250",
             "https://github.com/microsoft/mssql-jdbc",
             "https://github.com/microsoft/mssql-jdbc/blob/main/CHANGELOG.md",
             "https://github.com/microsoft/mssql-jdbc/commit/9732e1bbc6ec44166fda2cddab31ce1c86c873dd#diff-45367b99a1951943bfecfc7765e80df687967aa56286a5b2e039f77cd9a0e118",
@@ -437,6 +438,7 @@
             }
           },
           "References": [
+            "https://advisory.echohq.com/cve/CVE-2025-59250",
             "https://github.com/microsoft/mssql-jdbc",
             "https://github.com/microsoft/mssql-jdbc/blob/main/CHANGELOG.md",
             "https://github.com/microsoft/mssql-jdbc/commit/9732e1bbc6ec44166fda2cddab31ce1c86c873dd#diff-45367b99a1951943bfecfc7765e80df687967aa56286a5b2e039f77cd9a0e118",
@@ -528,15 +530,15 @@
             "CWE-287"
           ],
           "VendorSeverity": {
-            "bitnami": 2,
+            "bitnami": 3,
             "ghsa": 3,
             "nvd": 2,
             "redhat": 3
           },
           "CVSS": {
             "bitnami": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-              "V3Score": 5.9
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+              "V3Score": 8.2
             },
             "ghsa": {
               "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
@@ -616,12 +618,26 @@
             }
           },
           "References": [
+            "https://access.redhat.com/errata/RHSA-2026:19098",
+            "https://access.redhat.com/errata/RHSA-2026:22304",
+            "https://access.redhat.com/errata/RHSA-2026:24348",
             "https://access.redhat.com/errata/RHSA-2026:25030",
+            "https://access.redhat.com/errata/RHSA-2026:52928",
+            "https://access.redhat.com/errata/RHSA-2026:52929",
+            "https://access.redhat.com/errata/RHSA-2026:52930",
+            "https://access.redhat.com/errata/RHSA-2026:52978",
+            "https://access.redhat.com/errata/RHSA-2026:54532",
+            "https://access.redhat.com/errata/RHSA-2026:59277",
+            "https://access.redhat.com/errata/RHSA-2026:59278",
+            "https://access.redhat.com/errata/RHSA-2026:66488",
+            "https://access.redhat.com/errata/RHSA-2026:66545",
             "https://access.redhat.com/security/cve/CVE-2026-42198",
+            "https://advisory.echohq.com/cve/CVE-2026-42198",
             "https://bugzilla.redhat.com/2463857",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2463857",
+            "https://creativecommons.org/licenses/by/4.0/",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42198",
-            "https://errata.almalinux.org/8/ALSA-2026-25030.html",
+            "https://errata.almalinux.org/9/ALSA-2026-22304.html",
             "https://errata.rockylinux.org/RLSA-2026:22304",
             "https://github.com/pgjdbc/pgjdbc",
             "https://github.com/pgjdbc/pgjdbc/releases/tag/REL42.7.11",
@@ -629,10 +645,77 @@
             "https://linux.oracle.com/cve/CVE-2026-42198.html",
             "https://linux.oracle.com/errata/ELSA-2026-25030.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2026-42198",
+            "https://security.access.redhat.com/data/csaf/v2/vex/2026/cve-2026-42198.json",
             "https://www.cve.org/CVERecord?id=CVE-2026-42198"
           ],
           "PublishedDate": "2026-04-29T16:16:25.427Z",
-          "LastModifiedDate": "2026-06-17T10:47:30.097Z"
+          "LastModifiedDate": "2026-09-11T13:17:58.347Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2026-54291",
+          "VendorIDs": [
+            "GHSA-j92g-9f8w-j867"
+          ],
+          "PkgName": "org.postgresql:postgresql",
+          "PkgPath": "internal-jars/lib/postgresql.jar",
+          "PkgIdentifier": {
+            "PURL": "pkg:maven/org.postgresql/postgresql@42.7.4",
+            "UID": "d3c7a56e162b1f62"
+          },
+          "InstalledVersion": "42.7.4",
+          "FixedVersion": "42.7.12",
+          "Status": "fixed",
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2026-54291",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Maven",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Amaven"
+          },
+          "Fingerprint": "sha256:a2910b9fb0c4cd23625c16a54135e012f867fca1d38d61a6fe94b33a7285484a",
+          "Title": "org.postgresql/postgresql: com.ongres.scram/scram-client: pgjdbc: Man-in-the-middle protection bypass via SCRAM-SHA-256-PLUS downgrade",
+          "Description": "pgjdbc is an open source postgresql JDBC Driver. In releases 42.7.4 through 42.7.11, channelBinding=require connections can be silently downgraded from SCRAM-SHA-256-PLUS with channel binding to plain SCRAM-SHA-256 without it, losing the man-in-the-middle protection the setting is meant to guarantee. An attacker who can intercept the TLS connection can trigger the downgrade with a certificate whose signature algorithm has no tls-server-end-point channel-binding hash, because the bundled com.ongres.scram:scram-client returns an empty byte array instead of failing and pgJDBC ScramAuthenticator checks only that the server advertised a PLUS mechanism, without rejecting the empty binding or checking that the negotiated mechanism uses channel binding. This issue is fixed in version 42.7.12.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-636",
+            "CWE-757"
+          ],
+          "VendorSeverity": {
+            "bitnami": 3,
+            "ghsa": 3,
+            "nvd": 2,
+            "redhat": 2
+          },
+          "CVSS": {
+            "bitnami": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:L/SA:N",
+              "V40Score": 8.2
+            },
+            "ghsa": {
+              "V40Vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:L/SA:N",
+              "V40Score": 8.2
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2026-54291",
+            "https://advisory.echohq.com/cve/CVE-2026-54291",
+            "https://github.com/ongres/scram/releases/tag/3.3",
+            "https://github.com/pgjdbc/pgjdbc",
+            "https://github.com/pgjdbc/pgjdbc/commit/77df98e4e66c12936ded3478a0954f6f580bad99",
+            "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-54291",
+            "https://www.cve.org/CVERecord?id=CVE-2026-54291"
+          ],
+          "PublishedDate": "2026-07-06T19:17:08.407Z",
+          "LastModifiedDate": "2026-07-09T13:16:25.717Z"
         }
       ]
     }
